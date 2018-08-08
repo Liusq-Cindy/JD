@@ -1,0 +1,458 @@
+    @charset "UTF-8";
+    /*css 初始化 */
+    html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+        margin: 0;
+        padding: 0;
+    }
+
+    fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+        border: none;
+        padding: 0;
+        margin: 0;
+        outline-style: none;
+    }
+
+    ul, ol {
+        list-style: none;				/*清除列表风格*/
+    }
+
+    input {
+        padding-top: 0;
+        padding-bottom: 0;
+        font-family: "SimSun", "宋体";
+    }
+
+    select, input {
+        vertical-align: middle;
+    }
+
+    select, input, textarea {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    /*防止多行文本框拖动*/
+    img {
+        border: 0;
+        vertical-align: middle;
+    }
+
+    /*  去掉图片低测默认的3像素空白缝隙*/
+    table {
+        border-collapse: collapse;			/*合并外边线*/
+    }
+
+
+    body {
+        font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+        color: #666;
+        background: #fff
+    }
+
+    .clearfix:before, .clearfix:after {
+        content: "";
+        display: table
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+    .clearfix {
+        *zoom: 1; /*IE/7/6*/
+    }
+
+    a {
+        color: #666;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #C81623;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 100%;
+    }
+
+    s, i, em {
+        font-style: normal;
+        text-decoration: none;
+    }
+
+    .col-red {
+        color: #C81623 !important;
+    }
+
+    /*公共类*/
+    .w {
+        /*版心 提取 */
+        width: 1210px;
+        margin: 0 auto;
+    }
+
+    .fl {
+        float: left
+    }
+
+    .fr {
+        float: right
+    }
+
+    .al {
+        text-align: left
+    }
+
+    .ac {
+        text-align: center
+    }
+
+    .ar {
+        text-align: right
+    }
+
+    .hide {
+        display: none
+    }
+    /*nav开始*/
+    .site-nav {
+        height: 30px;
+        background: #f0f0f0;
+        line-height: 30px;
+    }
+    .site-nav .fore {
+        position: relative;
+        padding: 0 25px 0 10px;
+    }
+    .site-nav-send {
+        position:relative;
+        padding:0 25px 0 10px;
+        width: 60px;
+        height: 30px;
+    }
+    .site-nav i{
+        position: absolute;
+        width: 15px;
+        height: 7px;
+        top: 12px;
+        right: 8px;
+        overflow: hidden;
+    }
+    .site-nav-send s,.site-nav-r .fore s{
+        position: absolute;
+        top: -15px;
+    }
+    /*var right*/
+    .site-nav li{
+        float: left;
+        padding: 0 10px;
+    }
+    .site-nav li.shu{
+        width: 1px;
+        height: 15px;
+        background: #ddd;
+        padding: 0px;
+        margin-top: 9px;
+    }
+    .jd-tel {
+        position: relative;
+    }
+    .site-nav .jd-tel {
+        padding-left:25px;
+    }
+    .site-nav .fore span {
+        position: absolute;
+        top: 5px;
+        left: 7px;
+        width: 15px;
+        height: 20px;
+        background: url("../images/tel.png") no-repeat;
+    }
+    /*nav结束*/
+    /*top-banner开始*/
+    .topbanner {
+        background-color: #37C2FB;
+    }
+    .tb {
+        position:relative;
+    }
+    .close-banner {
+        position:absolute;
+        top: 5px;
+        right: 5px;
+        width: 19px;
+        height: 19px;
+        background: url("../images/close-banner.png") no-repeat;
+    }
+    .close-banner:hover {
+        background-position:0 -19px;
+    }
+    /*top-banner部分结束*/
+    /*search部分开始*/
+    .search-logo {
+        float:left;
+        width: 362px;
+        height: 60px;
+        padding: 20px 0;
+    }
+    .search-input {
+        float: left;
+        width: 538px;
+        height: 61px;
+    }
+    .search-car {
+        float:right;
+        width: 96px;
+        height: 34px;
+        margin:25px 65px 0 0;
+        border: 1px solid #dfdfdf;
+        background-color: #f9f9f9;
+        line-height: 34px;
+        padding-left: 43px;
+        position: relative;
+    }
+    .icon1 {
+        position: absolute;
+        width: 18px;
+        height: 16px;
+        background: url("../images/tel.png") no-repeat 0 -58px;
+        top: 8px;
+        left: 18px;
+    }
+    .icon2 {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        color: #999;
+        font:13px/34px "SimSun";
+    }
+    .icon3 {
+        position: absolute;
+        top:-5px;
+        width: 16px;
+        height: 14px;
+        background-color: #C81623;
+        line-height: 14px;
+        text-align: center;
+        color: #ffffff;
+        border-radius:7px 0 7px 0;
+    }
+    .search-morealink {
+        float: left;
+        width: 538px;
+        height: 28px;
+    }
+    .search-logo a {
+        display: inline-block;
+        width: 270px;
+        height: 60px;
+        text-indent:-5000px;
+        background: url("../images/logo.png") no-repeat;
+    }
+    .search-input {
+        float: left;
+        height: 36px;
+        padding: 25px 0 0 0;
+    }
+    .search-input input {
+        float: left;
+        width: 450px;
+        height: 32px;
+        border: 2px solid #b61d1d;
+        padding-left: 4px;
+        font: 400 14px/32px "microsoft yahei";
+        color:rgb(153,153,153);
+        border-right: 0;
+    }
+    .search-input button {
+        height: 36px;
+        width: 82px;
+        color: #ffffff;
+        font:400 16px/36px "微软雅黑";
+        background-color : #B61D1D;
+        cursor: pointer;
+    }
+    .search-morealink li {
+        float: left;
+        margin-top: 4px;
+    }
+    .search-morealink li a{
+        display: inline-block;
+        margin: 0 6px;
+        color: #000;
+    }
+    .search-morealink li a:hover {
+        color: #C81623;
+    }
+    /*search部分结束*/
+
+    /*<!--shortcut-nav部分开始-->*/
+    .shortcut-nav {
+        height: 44px;
+        width: 100%;
+        border-bottom: 2px solid  #B61D1D;
+    }
+     .shortcut-nav-menu {
+         width: 210px;
+         height: 44px;
+         float: left;
+     }
+      .shortcut-nav-items {
+          width: 730px;
+          height: 44px;
+          float: left;
+      }
+    .shortcut-nav-img {
+        width: 200px;
+        height: 44px;
+        float: right;
+    }
+    .shortcut-nav-img img {
+        height: 39px;
+        padding-bottom: 5px;
+    }
+    .shortcut-nav-menu-all a {
+        display: inline-block;
+        width: 210px;
+        height: 44px;
+        background-color: #b1191a;
+        font:400 18px/44px "microsoft yahei";
+        color: #ffffff;
+        text-align: center;
+    }
+    .shortcut-nav-menu-one {
+        width: 210px;
+        height: 466px;
+        margin-top: 2px;
+        background-color: #C81623;
+        border-left: 1px solid #b1191a;
+        border-bottom: 1px solid #b1191a;
+        position: absolute;
+        z-index: 5;
+    }
+    .shortcut-nav-items li{
+        float: left;
+    }
+    .shortcut-nav-items a {
+        display: inline-block;
+        height: 44px;
+        padding: 0 20px;
+        color:#333;
+        font: 400 15px/44px "microsolt yahei";
+    }
+    .shortcut-nav-items a:hover {
+        color:#c81623;
+    }
+    .shortcut-nav-menu-one div {
+        height: 31px;
+        padding: 0 10px;
+        color:#fff;
+        font:400 14px/31px "microsoft yahei";
+    }
+    .shortcut-nav-menu-one h3 {
+        float: left;
+    }
+    .shortcut-nav-menu-one a {
+        color: #ffffff;
+    }
+    .shortcut-nav-menu-one div:hover{
+        background-color: #ffffff;
+    }
+    .shortcut-nav-menu-one div:hover a {
+        color:#c81623;
+    }
+    .shortcut-nav-menu-one i {
+        float: right;
+        color: #ffffff;
+        font: 400 12px/31px "console";
+    }
+    /*<!--shortcut-nav部分结束-->*/
+
+
+
+
+
+    /*footer部分开始*/
+    .clearfix:before,.clearfix:after{
+        content:"";
+        display:table;
+    }
+    .clearfix:after{
+        clear:both;
+    }
+    .clearfix {
+        *zoom: 1; /*IE/7/6*/
+    }
+    .footer-top-slogen {
+        width: 100%;
+        height: 94px;
+        position: relative;
+        background-color: #f5f5f5;
+    }
+    .footer-top-slogen-icon {
+        position: absolute;
+        left:50%;
+        top:20px;
+    }
+    .footer-top-slogen-icon1 {
+        margin-left: -604px;
+    }
+    .footer-top-slogen-icon2 {
+        margin-left: -302px;
+    }
+    .footer-top-slogen-icon4 {
+        margin-left: 302px;
+    }
+
+    .footer-top-shopping dl{
+        padding-top: 16px;
+        float: left;
+        width: 200px;
+    }
+    .footer-top-shopping dt,.coverage h3{
+        height: 34px;
+        font:18px/34px "microsoft yahei";
+    }
+    .footer-top-shopping dd {
+        line-height: 20px;
+    }
+    .footer-top-shopping .last-dl {
+        width: 100px;
+    }
+    .footer-top .coverage {
+        float: right;
+        width: 186px;
+        height: 169px;
+        margin-top: 16px;
+        background: url("../images/china.png") no-repeat 0 -131px;
+        padding:0 50px 0 20px;
+    }
+    .footer-top .coverage a {
+        float: right;
+    }
+    .footer-top .coverage p {
+        padding-top: 8px;;
+    }
+    .footer-bottom {
+        border-top:1px solid #E5E5E5;
+        text-align: center;
+    }
+    .footer-bottom-links {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font:12px/18px "microsoft yahei";
+    }
+    .footer-bottom-links a {
+        margin:0 5px;
+        font:12px/18px "microsoft yahei";
+
+    }
+    .footer-bottom-img a {
+        margin-right: 5px;
+    }
